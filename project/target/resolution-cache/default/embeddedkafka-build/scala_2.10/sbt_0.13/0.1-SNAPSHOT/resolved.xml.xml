@@ -4,7 +4,7 @@
 		module="embeddedkafka-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170709174328"
+		publication="20180203192353"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
