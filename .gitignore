@@ -1,20 +1,4 @@
-*.class
-*.log
-.idea/
-.idea/*
-target/
-project/target
-
 # Simple Build Tool
 
 target/
 .idea/
-
-.config/
-.classpath
-.project
-.settings
-*.tmp
-*.bak
-*.swp
-.worksheet

@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180203193406"/>
+		date="20180203194642"/>
 	<dependencies>
 		<module organisation="net.manub" name="scalatest-embedded-kafka_2.11">
 			<revision name="0.13.1" status="release" pubdate="20170507031426" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/manub/scalatest-embedded-kafka" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">

@@ -2147,7 +2147,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 941ms :: artifacts dl 26ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 859ms :: artifacts dl 24ms[0m
 [0m[[0mdebug[0m] [0m	report for default#embeddedkafka_2.11;1.0 compile produced in /home/knoldus/MyProjects/EmbeddedKafka/target/resolution-cache/reports/default-embeddedkafka_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#embeddedkafka_2.11;1.0 runtime produced in /home/knoldus/MyProjects/EmbeddedKafka/target/resolution-cache/reports/default-embeddedkafka_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#embeddedkafka_2.11;1.0 test produced in /home/knoldus/MyProjects/EmbeddedKafka/target/resolution-cache/reports/default-embeddedkafka_2.11-test.xml[0m
@@ -2161,5 +2161,5 @@
 [0m[[0mdebug[0m] [0m	report for default#embeddedkafka_2.11;1.0 docs produced in /home/knoldus/MyProjects/EmbeddedKafka/target/resolution-cache/reports/default-embeddedkafka_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#embeddedkafka_2.11;1.0 pom produced in /home/knoldus/MyProjects/EmbeddedKafka/target/resolution-cache/reports/default-embeddedkafka_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#embeddedkafka_2.11;1.0 scala-tool produced in /home/knoldus/MyProjects/EmbeddedKafka/target/resolution-cache/reports/default-embeddedkafka_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (941ms resolve - 26ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (859ms resolve - 24ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
