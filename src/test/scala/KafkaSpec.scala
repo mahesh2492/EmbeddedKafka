@@ -1,13 +1,13 @@
-import consumer.MyConsumer
+import consumer.CustomConsumer
 import net.manub.embeddedkafka.{EmbeddedKafka, EmbeddedKafkaConfig}
 import org.scalatest.{BeforeAndAfterAll, FlatSpec}
-import producer.{MyProducer, User}
+import producer.{CustomProducer, User}
 import serde.UserSerializer
 
 class KafkaSpec extends FlatSpec with EmbeddedKafka with BeforeAndAfterAll {
   val topic = "test-topic"
-  val producer = new MyProducer
-  val consumer = new MyConsumer
+  val producer = new CustomProducer
+  val consumer = new CustomConsumer
   implicit val config = EmbeddedKafkaConfig(kafkaPort = 9092, zooKeeperPort = 2181)
 
   override def beforeAll(): Unit = {
