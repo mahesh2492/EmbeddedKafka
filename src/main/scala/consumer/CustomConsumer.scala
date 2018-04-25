@@ -24,7 +24,7 @@ class CustomConsumer {
     props.put("key.deserializer", config.getString("DESERIALIZER"))
     props.put("value.deserializer", config.getString("VALUE_DESERIALIZER"))
     props.put("group.id", config.getString("GROUP_ID"))
-    props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest")
+    props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, config.getString("OFFSET"))
 
     val consumer: KafkaConsumer[String, User] = new KafkaConsumer[String, User](props)
     consumer.subscribe(util.Collections.singletonList(topic))

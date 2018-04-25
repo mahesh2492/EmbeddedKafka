@@ -22,9 +22,9 @@ class CustomProducer{
     props.put("value.serializer", config.getString("VALUE_SERIALIZER"))
 
     val producer = new KafkaProducer[String,User](props)
-
+    val message = "Kafka"
     for(i <- 1 to 30) {
-      val record = new ProducerRecord[String, User](topic,User("name" + i, i))
+      val record = new ProducerRecord[String, User](topic,User(message + i, i))
       producer.send(record)
     }
   }
