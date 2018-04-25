@@ -4,6 +4,7 @@ import java.util.Properties
 
 import com.typesafe.config.ConfigFactory
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
+import org.apache.log4j.Logger
 import producer.User
 
 import scala.collection.JavaConverters._
@@ -18,8 +19,9 @@ class CustomConsumer {
   def consumeFromKafka(topic: String): List[User] = {
     val props = new Properties()
     val config = ConfigFactory.load()
+    val logger = Logger.getLogger(this.getClass)
 
-
+    logger.info(s"Request has come to comnsume data kafka topic $topic ")
     props.put("bootstrap.servers", config.getString("BOOTSTRAP_SERVER"))
     props.put("key.deserializer", config.getString("DESERIALIZER"))
     props.put("value.deserializer", config.getString("VALUE_DESERIALIZER"))

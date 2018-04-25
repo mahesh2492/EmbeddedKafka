@@ -4,6 +4,7 @@ import java.util.Properties
 
 import com.typesafe.config.ConfigFactory
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
+import org.apache.log4j.Logger
 
 
 case class User(name:String,id:Int)
@@ -14,9 +15,11 @@ class CustomProducer{
     * @param topic : String
     */
   def writeToKafka(topic:String): Unit = {
+    val logger = Logger.getLogger(this.getClass)
     val props = new Properties()
     val config = ConfigFactory.load()
 
+    logger.info(s"Request has come to write to kafka topic $topic ")
     props.put("bootstrap.servers", config.getString("BOOTSTRAP_SERVER"))
     props.put("key.serializer", config.getString("SERIALIZER"))
     props.put("value.serializer", config.getString("VALUE_SERIALIZER"))
